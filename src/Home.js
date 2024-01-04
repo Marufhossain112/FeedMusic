@@ -1,11 +1,11 @@
 import React from 'react';
-import HeroSection from './components/HeroSection/HeroSection';
+import IntroSection from './components/IntroSection/IntroSection';
 
 const Home = () => {
     return (
         <div>
             <h1 className='text-xl '>
-                <HeroSection />
+                <IntroSection />
             </h1>
         </div>
     );

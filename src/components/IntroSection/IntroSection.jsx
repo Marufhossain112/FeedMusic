@@ -1,8 +1,10 @@
 import React from 'react';
 import introVideo from "../../assets/intro.mp4";
-const HeroSection = () => {
+import Navbar from '../Navbar/Navbar';
+const IntroSection = () => {
     return (
-        <div className='w-[100%] h-[100vh]'>
+        <div className='w-[100%] h-[100vh] relative'>
+            <Navbar />
             <video className='w-[100%] h-[100%] object-cover' src={introVideo} autoPlay loop muted />
             <div className="absolute w-[100%] h-[100%] top-0 flex flex-col gap-8 justify-center items-center ">
                 <h2 className='text-[#E8E6E3] text-5xl leading-7'>When you want something,</h2>
@@ -14,4 +16,4 @@ const HeroSection = () => {
     );
 };
 
-export default HeroSection;
+export default IntroSection;
