@@ -10,13 +10,7 @@ import Home from './Home';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-    ],
+    element: <Home />
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
